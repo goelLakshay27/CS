@@ -1,0 +1,38 @@
+.parent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    background-color: chartreuse;
+    color: red;
+    border: 2px dotted black;
+}
+
+.child1 {
+    height: 200px;
+    width: 200px;
+    background-color: rebeccapurple;
+    border: 1px dotted red;
+    order: 1;
+}
+
+.child2 {
+    height: 200px;
+    width: 200px;
+    background-color: brown;
+    border: 1px dotted white;
+}
+
+.child3 {
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    border: 1px dotted darkblue;
+}
+
+.child4 {
+    height: 200px;
+    width: 200px;
+    background-color: pink;
+    border: 1px dotted black;
+}
