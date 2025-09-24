@@ -1,7 +1,7 @@
 .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 100px 400px 200px;
+    grid-template-rows: 100px 70px 400px 200px;
     border: 1px solid red;
     background-color: blue;
 }
@@ -14,6 +14,22 @@
     background-color: black;
     color: white;
     border: 1px solid white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.subheader {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border: white;
+    color: white;
+    background-color: #131921;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .container1 {
@@ -22,47 +38,58 @@
     grid-template-rows: repeat(2, 1fr);
     background-color: azure;
     border: 1px solid red;
+    padding: 20px 20px;
+    row-gap: 20px;
+    column-gap: 20px;
 }
 
 .container11 {
-    background-color: brown;
+    color: black;
     height: 100px;
-    width: 100px;
-    margin-top: 20px;
-    margin-left: 20px;
+    width: 100%;
 }
 
 .container12 {
-    background-color: aqua;
     height: 100px;
-    width: 100px;
-    margin-top: 20px;
+    width: 100%;
 }
 
 .container13 {
-    background-color: chartreuse;
     height: 100px;
-    width: 100px;
-    margin-left: 20px;
+    width: 100%;
 }
 
 .container14 {
-    background-color: chocolate;
     height: 100px;
-    width: 100px;
+    width: 100%;
 }
 
 .container2 {
-    background-color: burlywood;
-    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background-color: azure;
+    border: 1px solid red;
 }
 
 .container3 {
-    background-color: aqua;
-    border: 1px solid cyan;
+    background-color: azure;
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
 .container4 {
     background-color: chartreuse;
     border: 1px solid green;
+}
+
+.footer {
+    background-color: #1c1a13;
+    color: white;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 5;
 }
